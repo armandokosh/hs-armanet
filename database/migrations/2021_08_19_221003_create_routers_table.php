@@ -16,6 +16,7 @@ class CreateRoutersTable extends Migration
         Schema::create('routers', function (Blueprint $table) {
             $table->id();
             $table->string("name")->unique();
+            $table->string("ip");
             $table->string("username");
             $table->string("password");
             $table->string("dns_name");
